@@ -1,0 +1,124 @@
+.Project {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding:0px 60px; /* Add some padding for spacing */
+    flex-direction: row;
+  
+    .project-content {
+      display: flex;
+      flex-direction: row; /* Ensure left and right parts are side by side */
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .left-part, .right-part {
+      display: flex;
+      flex-direction: column;
+  
+      h3 {
+        // padding-top: 5px;
+        margin-bottom: 20px; 
+        text-align: left;
+      }
+  
+      p {
+        text-align: left;
+      }
+    }
+  
+    .left-part {
+      flex-basis: 60%; /* Take up 55% of the space */
+      flex-grow: 1; /* Allow to grow */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      .img-container {
+        width: 100%;
+        // max-width: 497px; /* Ensure max-width to control size */
+        position: relative;
+  
+        .video-wrapper {
+          position: absolute;
+          top: 17%; /* Adjust to fit the laptop screen */
+          left: 14%; /* Adjust to fit the laptop screen */
+          width: 70.5%; /* Adjust to fit the laptop screen */
+          height: 66.2%; /* Adjust to fit the laptop screen */
+          overflow: hidden;
+          border-radius: 10px; /* Optional: round the corners to match the laptop screen */
+          z-index: 0;
+        }
+  
+        .video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; /* Ensure the video covers the container */
+        }
+  
+        img.laptop {
+          position: relative;
+          width: 100%;
+          height: auto;
+          z-index: 9;
+        }
+      }
+    }
+  
+    .right-part {
+      flex-basis: 40%; /* Take up 45% of the space */
+      flex-grow: 1; /* Allow to grow */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .project-description {
+        // list-style-type: circle; /* Use circle list style */
+        margin-left: 10px;
+        // margin-bottom: 20px;
+        color: #666666;
+        li {
+          margin-bottom: 10px;
+        }
+      }
+  
+      .logo-container {
+        font-size: 1.5rem;
+        // padding-top: 10px;
+        padding-bottom: 10px;
+        // justify-content: center;
+        display: flex;
+        gap: 50px; /* Adjust spacing between logos */
+        margin-top: 20px;
+        // margin-bottom: 20px;
+  
+        img {
+          width: 50px; /* Adjust size of the logos */
+          height: 50px;
+        }
+      }
+  
+      .bottom-part {
+        // padding-top: 10px;
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+  
+        .project-link-button {
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            padding: 12px 40px;
+            background-color: #7843E9;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            align-self: flex-end; /* Aligns the button to the right */
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,135 @@
+.Contact {
+  background-image: url('../../assets/white-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  .gif-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+
+    .gif {
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+    }
+  }
+
+  .about-contact {
+    .top-part {
+      padding-top: 75px;
+      text-align: center;
+      margin-bottom: 20px;
+
+      h1 {
+        margin-bottom: 25px;
+        color: #333;
+        position: relative;
+        padding-bottom: 5px;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -5px;
+          width: 24px; /* Length of the underline */
+          height: 4.5px; /* Thickness of the underline */
+          background-color: var(--accent-color); /* Purple color */
+          border-radius: 20%; /* Rounded edges */
+        }
+      }
+
+      p {
+        font-weight: 525;
+        font-size: 1.05rem;
+        padding-top: 12.5px;
+        padding-bottom: 40px;
+      }
+    }
+
+    .bottom-part {
+      margin-left: 50px;
+      padding-bottom: 50px;
+
+      .success-message {
+        color: green;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      form {
+        padding: 25px 30px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 5px;
+        box-shadow: rgba(5, 5, 5, 0.4) 0px 7px 29px 0px;
+        border: 1px solid #000000;
+        max-width: 700px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        p {
+          font-size: 1.05rem;
+          font-weight: 500;
+          padding-top: 5px;
+          padding-bottom: 10px;
+        }
+
+        input,
+        textarea {
+          margin-bottom: 15px;
+          background-color: #DADADA;
+          padding: 10px;
+          border: 0px solid #000000;
+          border-radius: 5px;
+          font-size: 16px;
+          width: 100%;
+        }
+
+        textarea {
+          resize: vertical;
+          min-height: 150px;
+        }
+
+        button {
+          margin-top: 10px;
+          padding: 12px 40px;
+          background-color: #7843E9;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          align-self: flex-end; /* Aligns the button to the right */
+        }
+
+        button:hover {
+          background-color: #6433d1;
+        }
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 600px) {
+        .about-contact {
+          padding: 20px;
+        }
+
+        button {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

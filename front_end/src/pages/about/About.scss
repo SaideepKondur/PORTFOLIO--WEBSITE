@@ -1,0 +1,162 @@
+.About {
+    height: 100vh;
+    background-color: #FAFAFA;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+    .about-content {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      .top-part {
+        padding-top: 75px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        h1 {
+          position: relative;
+          margin-bottom: 25px; /* Adjust margin as needed */
+          text-align: center;
+          padding-bottom: 5px;
+  
+          &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            border-radius: 20%;
+            transform: translateX(-15%);
+            bottom: -5px; /* Adjust as needed */
+            width: 21px; /* Length of the underline */
+            height: 4.5px; /* Thickness of the underline */
+            background-color: var(--accent-color); /* Adjust color as needed */
+          }
+        }
+  
+        p {
+            padding-top: 12.5px;
+            font-weight: 500;
+            font-size: 1.05rem;
+            text-align: center;
+  
+          span {
+            color: var(--secondary-text-color);
+          }
+        }
+      }
+  
+      .center-part {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 40px 60px; /* Add some padding for spacing */
+  
+        .left-part, .right-part {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          padding: 0 40px;
+  
+          h3 {
+            margin-bottom: 20px; 
+            text-align: left;
+          }
+  
+          p {
+            text-align: left;
+          }
+        }
+  
+        .left-part {
+          margin-right: 20px; /* Adjust the margin as needed */
+          span {
+            font-weight: bold;
+          }
+        }
+  
+        .right-part {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+  
+          .logos {
+            display: grid; /* Use CSS Grid */
+            grid-template-columns: repeat(4, 1fr); /* 4 columns */
+            grid-gap: 40px 20px; /* Adjust the gap as needed */
+            position: relative;
+  
+            .logo-container {
+              position: relative;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+  
+              img {
+                width: 45%;
+                transition: all 0.3s ease; /* Smooth transition for hover effect */
+              }
+  
+              &::before {
+                content: attr(data-text); /* Use data attribute for text */
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: #fff;
+                background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+                padding: 5px 10px;
+                border-radius: 3px;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                pointer-events: none; /* Prevent text from being hovered */
+                white-space: nowrap; /* Prevent text from wrapping */
+                font-size: 0.9rem; /* Smaller font size for a subtler look */
+                z-index: 10; /* Ensure text is above image */
+              }
+  
+              &:hover img {
+                opacity: 0.8; /* Slight fade effect on hover */
+              }
+  
+              &:hover::before {
+                opacity: 1; /* Show text on hover */
+              }
+            }
+          }
+        }
+      }
+  
+      .bottom-part {
+        padding-top: 15px;
+        padding-bottom: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center; /* Center align the button */
+        // padding: 20px 0; /* Ensure there's padding to see the button */
+  
+        .download-cv-button {
+                text-decoration: none;
+                font-weight: bold;
+                margin-top: 10px;
+                padding: 16px 30px;
+                background-color: #7843E9;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                align-self: flex-end; /* Aligns the button to the right */
+        }
+      }
+    }
+  }
+  
