@@ -120,5 +120,63 @@
         }
       }
     }
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      align-items: center;
+  
+      .project-content {
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .left-part,
+      .right-part {
+        flex-basis: 100%;
+      }
+  
+      .left-part {
+        margin-bottom: 20px;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .project-description {
+        margin-left: 0;
+        padding: 0 20px;
+      }
+  
+      .logo-container {
+        justify-content: center;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      padding: 0 20px;
+  
+      .project-description {
+        padding: 0 10px;
+  
+        li {
+          font-size: 0.9rem;
+        }
+      }
+  
+      .logo-container {
+        gap: 10px;
+  
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+  
+      .bottom-part {
+        .project-link-button {
+          padding: 10px 30px;
+          font-size: 14px;
+        }
+      }
+    }
   }
   
