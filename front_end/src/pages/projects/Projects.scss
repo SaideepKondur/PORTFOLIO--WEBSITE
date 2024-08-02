@@ -1,7 +1,4 @@
 .Projects {
-  // height: 100vh;
-  // background-color: #d61616;
-  // background-color: #FAFAFA;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -32,7 +29,7 @@
           position: absolute;
           left: 50%;
           border-radius: 20%;
-          transform: translateX(-15%);
+          transform: translateX(-50%);
           bottom: -5px; /* Adjust as needed */
           width: 24px; /* Length of the underline */
           height: 4.5px; /* Thickness of the underline */
@@ -53,11 +50,57 @@
     }
 
     .center-part {
-      // padding-top: 40px;
       width: 100%;
       display: flex;
       flex-direction: column; /* Ensure projects are stacked vertically */
       align-items: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .projects-content {
+      padding: 0 20px; /* Add some padding for smaller screens */
+
+      .top-part {
+        h1 {
+          font-size: 1.5rem; /* Adjust font size */
+        }
+
+        p {
+          font-size: 1rem; /* Adjust font size */
+        }
+      }
+
+      .center-part {
+        .Project {
+          .project-content {
+            flex-direction: column; /* Stack project content vertically on smaller screens */
+
+            .left-part,
+            .right-part {
+              width: 100%; /* Take full width on smaller screens */
+            }
+
+            .left-part {
+              margin-bottom: 20px; /* Add some spacing between sections */
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .projects-content {
+      .top-part {
+        h1 {
+          font-size: 1.2rem; /* Further adjust font size */
+        }
+
+        p {
+          font-size: 0.9rem; /* Further adjust font size */
+        }
+      }
     }
   }
 }
