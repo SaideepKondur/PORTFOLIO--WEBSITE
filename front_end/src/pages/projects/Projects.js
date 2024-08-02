@@ -37,9 +37,9 @@ const projectsData = [
     title: 'Posterz',
     // description: 'Posterz is an ecommerce web app built with the MERN stack and Strapi as the CMS. It uses Node.js, PostgreSQL, and Stripe for secure transactions and smooth user experience. The React and Redux frontend allows users to browse, categorize, add to cart, and checkout easily.',
     description: [
-      'Connectify is a social media web app built with the MERN stack and Redux for state management.',
-      'It includes secure JWT authentication, Cloudinary for picture sharing, and essential social features.',
-      'Users can search, follow, like posts, and manage profiles effortlessly.'
+      'Posterz is an ecommerce web app built with the MERN stack and Strapi as the CMS.',
+      'It uses Node.js, PostgreSQL, and Stripe for secure transactions and smooth user experience.',
+      'The React and Redux frontend allows users to browse, categorize, add to cart, and checkout easily.'
     ],
     techLogos: [
       { src: reactLogoBW, alt: 'React' },
@@ -67,17 +67,17 @@ const projectsData = [
       { src: mongodbBW, alt: 'MongoDB' },
       { src: cloudBW, alt: 'Cloudinary' },
     ],
-    videoSrc: connectify, // Use another video if available
-    imageSrc: laptop, // Use another image if available
+    videoSrc: connectify,
+    imageSrc: laptop, 
     link: 'https://connectify-social-media-website.vercel.app/#/login'
   },
   {
     title: 'Clemson University - Software Engineer Intern',
     // description: 'As a Software Engineer Intern at Clemson University, worked on websites using Cascade CMS, WordPress, HTML, CSS, JavaScript, MySQL, and PHPMyAdmin. Converted college and departmental websites to a new format based on design requirements. Optimized pages for QA and SEO by analyzing Google Analytics, reducing errors, and fixing broken links.',
     description: [
-      'Connectify is a social media web app built with the MERN stack and Redux for state management.',
-      'It includes secure JWT authentication, Cloudinary for picture sharing, and essential social features.',
-      'Users can search, follow, like posts, and manage profiles effortlessly.'
+      'As a Software Engineer Intern at Clemson University, worked on websites using Cascade CMS, WordPress, HTML, CSS, JavaScript, MySQL, and PHPMyAdmin.',
+      'Converted college and departmental websites to a new format based on design requirements.',
+      'Optimized pages for QA and SEO by analyzing Google Analytics, reducing errors, and fixing broken links.'
     ],
     techLogos: [
       { src: wordpressBW, alt: 'Wordpress' },
@@ -99,9 +99,9 @@ function Projects() {
         <div className="top-part">
           <h1>Projects</h1>
           <p>Here you will find some of the personal and professional projects that I created with each project 
-          <br/>containing its own case study</p>
+          <br/>containing its live project link</p>
         </div>
-        <div className="center-part">
+        <div className="center-part"> 
           {projectsData.map((project, index) => (
             <Project
               key={index}
