@@ -72,8 +72,8 @@ const projectsData = [
     link: 'https://connectify-social-media-website.vercel.app/#/login'
   },
   {
-    title: 'Clemson University - Software Engineer Intern',
-    // description: 'As a Software Engineer Intern at Clemson University, worked on websites using Cascade CMS, WordPress, HTML, CSS, JavaScript, MySQL, and PHPMyAdmin. Converted college and departmental websites to a new format based on design requirements. Optimized pages for QA and SEO by analyzing Google Analytics, reducing errors, and fixing broken links.',
+    title: 'Clemson University - Software Engineer',
+    // description: 'As a Software Engineer Intern at Clemson University, worked on multiple websites using MERN Stack, Cascade CMS, WordPress, HTML, CSS, JavaScript, MySQL, and PHPMyAdmin. Converted college and departmental websites to a new format based on design requirements. Optimized pages for QA and SEO by analyzing Google Analytics, reducing errors, and fixing broken links.',
     description: [
       'As a Software Engineer Intern at Clemson University, worked on websites using Cascade CMS, WordPress, HTML, CSS, JavaScript, MySQL, and PHPMyAdmin.',
       'Converted college and departmental websites to a new format based on design requirements.',
